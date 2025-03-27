@@ -9,6 +9,7 @@ int main() {
 
     int option;//Declaração da variável option
 
+    // Loop do-while para exibir o menu e permitir que o usuário escolha uma opção
     do {
         printf("\n");
         printf("Menu:\n");
@@ -21,6 +22,7 @@ int main() {
         scanf("%d", &option);
         printf("\n");
 
+        // Switch-case para executar o código com base na opção escolhida pelo usuário
         switch (option) {
             case 1:
                 printf("Você escolheu a Torre\n");
@@ -55,7 +57,7 @@ int main() {
                 printf("Opção inválida! Tente novamente.\n");
         }
 
-    } while (option != 4);
+    } while (option != 4);//Condição para repetir o loop
 
     return 0;
 }
